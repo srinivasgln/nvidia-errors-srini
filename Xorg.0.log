@@ -1,0 +1,506 @@
+[    45.001] 
+X.Org X Server 1.18.4
+Release Date: 2016-07-19
+[    45.001] X Protocol Version 11, Revision 0
+[    45.001] Build Operating System: Linux 4.4.0-128-generic x86_64 Ubuntu
+[    45.001] Current Operating System: Linux srini-Precision-7530 4.15.0-112-generic #113~16.04.1-Ubuntu SMP Fri Jul 10 04:37:08 UTC 2020 x86_64
+[    45.001] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-112-generic root=UUID=bfff8b6f-bfbe-4aeb-ae32-e44243fd9edc ro nogpumanager quiet splash
+[    45.001] Build Date: 10 August 2018  09:33:05AM
+[    45.001] xorg-server 2:1.18.4-0ubuntu0.8 (For technical support please see http://www.ubuntu.com/support) 
+[    45.001] Current version of pixman: 0.33.6
+[    45.001] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    45.001] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    45.001] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Jul 24 17:41:19 2020
+[    45.001] (==) Using config file: "/etc/X11/xorg.conf"
+[    45.001] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    45.001] (==) ServerLayout "Layout0"
+[    45.001] (**) |-->Screen "Screen0" (0)
+[    45.001] (**) |   |-->Monitor "Monitor0"
+[    45.001] (**) |   |-->Device "Device0"
+[    45.001] (**) |-->Input Device "Keyboard0"
+[    45.001] (**) |-->Input Device "Mouse0"
+[    45.001] (==) Automatically adding devices
+[    45.001] (==) Automatically enabling devices
+[    45.001] (==) Automatically adding GPU devices
+[    45.001] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    45.001] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[    45.001] 	Entry deleted from font path.
+[    45.001] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[    45.001] 	Entry deleted from font path.
+[    45.001] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[    45.001] 	Entry deleted from font path.
+[    45.001] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	built-ins
+[    45.001] (==) ModulePath set to "/usr/lib/x86_64-linux-gnu/xorg/extra-modules,/usr/lib/xorg/extra-modules,/usr/lib/xorg/modules"
+[    45.001] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[    45.001] (WW) Disabling Keyboard0
+[    45.001] (WW) Disabling Mouse0
+[    45.001] (II) Loader magic: 0x5577d9d1adc0
+[    45.001] (II) Module ABI versions:
+[    45.001] 	X.Org ANSI C Emulation: 0.4
+[    45.001] 	X.Org Video Driver: 20.0
+[    45.001] 	X.Org XInput driver : 22.1
+[    45.001] 	X.Org Server Extension : 9.0
+[    45.002] (++) using VT number 7
+
+[    45.002] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    45.002] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    45.002] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    45.019] (--) PCI:*(0:0:2:0) 8086:3e9b:1028:0831 rev 0, Mem @ 0xb3000000/16777216, 0x60000000/268435456, I/O @ 0x00004000/64, BIOS @ 0x????????/131072
+[    45.019] (--) PCI: (0:1:0:0) 10de:1bbb:1028:0831 rev 161, Mem @ 0xb4000000/16777216, 0x70000000/268435456, 0x80000000/33554432, I/O @ 0x00003000/128, BIOS @ 0x????????/524288
+[    45.019] (WW) "glamoregl" will not be loaded unless you've specified it to be loaded elsewhere.
+[    45.019] (II) "glx" will be loaded by default.
+[    45.019] (II) LoadModule: "glx"
+[    45.019] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    45.019] (EE) Failed to load /usr/lib/xorg/modules/extensions/libglx.so: libGL.so.1: cannot open shared object file: No such file or directory
+[    45.019] (II) UnloadModule: "glx"
+[    45.020] (II) Unloading glx
+[    45.020] (EE) Failed to load module "glx" (loader failed, 7)
+[    45.020] (II) LoadModule: "nvidia"
+[    45.020] (II) Loading /usr/lib/x86_64-linux-gnu/xorg/extra-modules/nvidia_drv.so
+[    45.020] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    45.020] 	compiled for 4.0.2, module version = 1.0.0
+[    45.020] 	Module class: X.Org Video Driver
+[    45.020] (II) NVIDIA dlloader X Driver  418.152.00  Tue Jun  2 00:37:06 UTC 2020
+[    45.020] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    45.020] (II) Loading sub module "fb"
+[    45.020] (II) LoadModule: "fb"
+[    45.020] (II) Loading /usr/lib/xorg/modules/libfb.so
+[    45.020] (II) Module fb: vendor="X.Org Foundation"
+[    45.020] 	compiled for 1.18.4, module version = 1.0.0
+[    45.020] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    45.020] (II) Loading sub module "wfb"
+[    45.020] (II) LoadModule: "wfb"
+[    45.020] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[    45.020] (II) Module wfb: vendor="X.Org Foundation"
+[    45.020] 	compiled for 1.18.4, module version = 1.0.0
+[    45.020] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    45.020] (II) Loading sub module "ramdac"
+[    45.020] (II) LoadModule: "ramdac"
+[    45.020] (II) Module "ramdac" already built-in
+[    45.020] (EE) No devices detected.
+[    45.020] (II) Applying OutputClass "nvidia" to /dev/dri/card1
+[    45.020] 	loading driver: nvidia
+[    45.020] (==) Matched intel as autoconfigured driver 0
+[    45.020] (==) Matched nvidia as autoconfigured driver 1
+[    45.020] (==) Matched nvidia as autoconfigured driver 2
+[    45.020] (==) Matched nouveau as autoconfigured driver 3
+[    45.020] (==) Matched intel as autoconfigured driver 4
+[    45.020] (==) Matched modesetting as autoconfigured driver 5
+[    45.020] (==) Matched fbdev as autoconfigured driver 6
+[    45.020] (==) Matched vesa as autoconfigured driver 7
+[    45.020] (==) Assigned the driver to the xf86ConfigLayout
+[    45.020] (II) LoadModule: "intel"
+[    45.020] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[    45.020] (II) Module intel: vendor="X.Org Foundation"
+[    45.020] 	compiled for 1.18.4, module version = 2.99.917
+[    45.020] 	Module class: X.Org Video Driver
+[    45.020] 	ABI class: X.Org Video Driver, version 20.0
+[    45.020] (II) LoadModule: "nvidia"
+[    45.020] (II) Loading /usr/lib/x86_64-linux-gnu/xorg/extra-modules/nvidia_drv.so
+[    45.020] (II) Module nvidia: vendor="NVIDIA Corporation"
+[    45.020] 	compiled for 4.0.2, module version = 1.0.0
+[    45.020] 	Module class: X.Org Video Driver
+[    45.021] (II) UnloadModule: "nvidia"
+[    45.021] (II) Unloading nvidia
+[    45.021] (II) Failed to load module "nvidia" (already loaded, 21879)
+[    45.021] (II) LoadModule: "nouveau"
+[    45.021] (WW) Warning, couldn't open module nouveau
+[    45.021] (II) UnloadModule: "nouveau"
+[    45.021] (II) Unloading nouveau
+[    45.021] (EE) Failed to load module "nouveau" (module does not exist, 0)
+[    45.021] (II) LoadModule: "modesetting"
+[    45.021] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    45.021] (II) Module modesetting: vendor="X.Org Foundation"
+[    45.021] 	compiled for 1.18.4, module version = 1.18.4
+[    45.021] 	Module class: X.Org Video Driver
+[    45.021] 	ABI class: X.Org Video Driver, version 20.0
+[    45.021] (II) LoadModule: "fbdev"
+[    45.021] (WW) Warning, couldn't open module fbdev
+[    45.021] (II) UnloadModule: "fbdev"
+[    45.021] (II) Unloading fbdev
+[    45.021] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[    45.021] (II) LoadModule: "vesa"
+[    45.021] (WW) Warning, couldn't open module vesa
+[    45.021] (II) UnloadModule: "vesa"
+[    45.021] (II) Unloading vesa
+[    45.021] (EE) Failed to load module "vesa" (module does not exist, 0)
+[    45.021] (II) NVIDIA dlloader X Driver  418.152.00  Tue Jun  2 00:37:06 UTC 2020
+[    45.021] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[    45.021] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[    45.021] (II) intel: Driver for Intel(R) HD Graphics: 2000-6000
+[    45.021] (II) intel: Driver for Intel(R) Iris(TM) Graphics: 5100, 6100
+[    45.021] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics: 5200, 6200, P6300
+[    45.021] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    45.021] (WW) xf86OpenConsole: setpgid failed: Operation not permitted
+[    45.021] (WW) xf86OpenConsole: setsid failed: Operation not permitted
+[    45.021] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20171023
+[    45.021] (II) intel(0): SNA compiled: xserver-xorg-video-intel 2:2.99.917+git20160325-1ubuntu1.2 (Timo Aaltonen <tjaalton@debian.org>)
+[    45.021] (II) intel(0): SNA compiled for use with valgrind
+[    45.041] (WW) Falling back to old probe method for modesetting
+[    45.041] (WW) intel(0): Unknown chipset
+[    45.041] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 6 threads
+[    45.041] (**) intel(0): Depth 24, (--) framebuffer bpp 32
+[    45.041] (==) intel(0): RGB weight 888
+[    45.041] (==) intel(0): Default visual is TrueColor
+[    45.042] (II) intel(0): Output eDP1 using monitor section Monitor0
+[    45.072] (--) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[    45.072] (II) intel(0): Enabled output eDP1
+[    45.072] (II) intel(0): Output DP1 has no monitor section
+[    45.072] (II) intel(0): Enabled output DP1
+[    45.072] (II) intel(0): Output DP2 has no monitor section
+[    45.072] (II) intel(0): Enabled output DP2
+[    45.072] (II) intel(0): Output HDMI1 has no monitor section
+[    45.072] (II) intel(0): Enabled output HDMI1
+[    45.072] (II) intel(0): Output DP3 has no monitor section
+[    45.072] (II) intel(0): Enabled output DP3
+[    45.072] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[    45.072] (II) intel(0): Output VIRTUAL1 has no monitor section
+[    45.072] (II) intel(0): Enabled output VIRTUAL1
+[    45.072] (--) intel(0): Output eDP1 using initial mode 3840x2160 on pipe 0
+[    45.072] (==) intel(0): TearFree enabled
+[    45.072] (==) intel(0): DPI set to (96, 96)
+[    45.072] (II) Loading sub module "dri2"
+[    45.072] (II) LoadModule: "dri2"
+[    45.072] (II) Module "dri2" already built-in
+[    45.073] (II) Loading sub module "present"
+[    45.073] (II) LoadModule: "present"
+[    45.073] (II) Module "present" already built-in
+[    45.073] (==) Depth 24 pixmap format is 32 bpp
+[    45.073] (II) intel(0): SNA initialized with disabled backend
+[    45.073] (==) intel(0): Backing store enabled
+[    45.073] (==) intel(0): Silken mouse enabled
+[    45.073] (II) intel(0): HW Cursor enabled
+[    45.073] (II) intel(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[    45.074] (**) intel(0): DPMS enabled
+[    45.074] (==) intel(0): Display hotplug detection enabled
+[    45.074] (II) intel(0): Textured video not supported on this hardware or backend
+[    45.074] (WW) intel(0): loading DRI2 whilst acceleration is disabled.
+[    45.074] (II) intel(0): [DRI2] Setup complete
+[    45.074] (II) intel(0): [DRI2]   DRI driver: i965
+[    45.074] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[    45.074] (II) intel(0): direct rendering: DRI2 enabled
+[    45.074] (II) intel(0): hardware support for Present enabled
+[    45.074] (--) RandR disabled
+[    45.076] (II) SELinux: Disabled on system
+[    45.080] (II) intel(0): switch to mode 3840x2160@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    45.082] (II) intel(0): Setting screen physical size to 1016 x 571
+[    45.115] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    45.115] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    45.115] (II) LoadModule: "evdev"
+[    45.115] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[    45.115] (II) Module evdev: vendor="X.Org Foundation"
+[    45.115] 	compiled for 1.18.1, module version = 2.10.1
+[    45.115] 	Module class: X.Org XInput Driver
+[    45.115] 	ABI class: X.Org XInput driver, version 22.1
+[    45.115] (II) Using input driver 'evdev' for 'Power Button'
+[    45.115] (**) Power Button: always reports core events
+[    45.115] (**) evdev: Power Button: Device: "/dev/input/event3"
+[    45.115] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    45.115] (--) evdev: Power Button: Found keys
+[    45.115] (II) evdev: Power Button: Configuring as keyboard
+[    45.116] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    45.116] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    45.116] (**) Option "xkb_rules" "evdev"
+[    45.116] (**) Option "xkb_model" "pc105"
+[    45.116] (**) Option "xkb_layout" "us"
+[    45.116] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[    45.116] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    45.116] (II) Using input driver 'evdev' for 'Video Bus'
+[    45.116] (**) Video Bus: always reports core events
+[    45.116] (**) evdev: Video Bus: Device: "/dev/input/event5"
+[    45.116] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[    45.116] (--) evdev: Video Bus: Found keys
+[    45.116] (II) evdev: Video Bus: Configuring as keyboard
+[    45.116] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input5/event5"
+[    45.116] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    45.116] (**) Option "xkb_rules" "evdev"
+[    45.116] (**) Option "xkb_model" "pc105"
+[    45.116] (**) Option "xkb_layout" "us"
+[    45.116] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[    45.116] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    45.116] (II) Using input driver 'evdev' for 'Video Bus'
+[    45.116] (**) Video Bus: always reports core events
+[    45.116] (**) evdev: Video Bus: Device: "/dev/input/event6"
+[    45.116] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[    45.116] (--) evdev: Video Bus: Found keys
+[    45.116] (II) evdev: Video Bus: Configuring as keyboard
+[    45.116] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:0b/LNXVIDEO:01/input/input6/event6"
+[    45.116] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[    45.116] (**) Option "xkb_rules" "evdev"
+[    45.116] (**) Option "xkb_model" "pc105"
+[    45.116] (**) Option "xkb_layout" "us"
+[    45.117] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    45.117] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    45.117] (II) Using input driver 'evdev' for 'Power Button'
+[    45.117] (**) Power Button: always reports core events
+[    45.117] (**) evdev: Power Button: Device: "/dev/input/event1"
+[    45.117] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    45.117] (--) evdev: Power Button: Found keys
+[    45.117] (II) evdev: Power Button: Configuring as keyboard
+[    45.117] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    45.117] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[    45.117] (**) Option "xkb_rules" "evdev"
+[    45.117] (**) Option "xkb_model" "pc105"
+[    45.117] (**) Option "xkb_layout" "us"
+[    45.117] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    45.117] (II) No input driver specified, ignoring this device.
+[    45.117] (II) This device may have been added with another device file.
+[    45.117] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    45.117] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    45.117] (II) Using input driver 'evdev' for 'Sleep Button'
+[    45.117] (**) Sleep Button: always reports core events
+[    45.117] (**) evdev: Sleep Button: Device: "/dev/input/event2"
+[    45.117] (--) evdev: Sleep Button: Vendor 0 Product 0x3
+[    45.117] (--) evdev: Sleep Button: Found keys
+[    45.117] (II) evdev: Sleep Button: Configuring as keyboard
+[    45.117] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input2/event2"
+[    45.117] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 10)
+[    45.117] (**) Option "xkb_rules" "evdev"
+[    45.117] (**) Option "xkb_model" "pc105"
+[    45.117] (**) Option "xkb_layout" "us"
+[    45.118] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event16)
+[    45.118] (II) No input driver specified, ignoring this device.
+[    45.118] (II) This device may have been added with another device file.
+[    45.118] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event17)
+[    45.118] (II) No input driver specified, ignoring this device.
+[    45.118] (II) This device may have been added with another device file.
+[    45.118] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event18)
+[    45.118] (II) No input driver specified, ignoring this device.
+[    45.118] (II) This device may have been added with another device file.
+[    45.118] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event19)
+[    45.118] (II) No input driver specified, ignoring this device.
+[    45.118] (II) This device may have been added with another device file.
+[    45.119] (II) config/udev: Adding input device Integrated Webcam_HD: Integrate (/dev/input/event10)
+[    45.119] (**) Integrated Webcam_HD: Integrate: Applying InputClass "evdev keyboard catchall"
+[    45.119] (II) Using input driver 'evdev' for 'Integrated Webcam_HD: Integrate'
+[    45.119] (**) Integrated Webcam_HD: Integrate: always reports core events
+[    45.119] (**) evdev: Integrated Webcam_HD: Integrate: Device: "/dev/input/event10"
+[    45.119] (--) evdev: Integrated Webcam_HD: Integrate: Vendor 0xbda Product 0x5650
+[    45.119] (--) evdev: Integrated Webcam_HD: Integrate: Found keys
+[    45.119] (II) evdev: Integrated Webcam_HD: Integrate: Configuring as keyboard
+[    45.119] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/input/input10/event10"
+[    45.119] (II) XINPUT: Adding extended input device "Integrated Webcam_HD: Integrate" (type: KEYBOARD, id 11)
+[    45.119] (**) Option "xkb_rules" "evdev"
+[    45.119] (**) Option "xkb_model" "pc105"
+[    45.119] (**) Option "xkb_layout" "us"
+[    45.119] (II) config/udev: Adding input device PixArt Dell MS116 USB Optical Mouse (/dev/input/event7)
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[    45.119] (II) Using input driver 'evdev' for 'PixArt Dell MS116 USB Optical Mouse'
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: always reports core events
+[    45.119] (**) evdev: PixArt Dell MS116 USB Optical Mouse: Device: "/dev/input/event7"
+[    45.119] (--) evdev: PixArt Dell MS116 USB Optical Mouse: Vendor 0x413c Product 0x301a
+[    45.119] (--) evdev: PixArt Dell MS116 USB Optical Mouse: Found 3 mouse buttons
+[    45.119] (--) evdev: PixArt Dell MS116 USB Optical Mouse: Found scroll wheel(s)
+[    45.119] (--) evdev: PixArt Dell MS116 USB Optical Mouse: Found relative axes
+[    45.119] (--) evdev: PixArt Dell MS116 USB Optical Mouse: Found x and y relative axes
+[    45.119] (II) evdev: PixArt Dell MS116 USB Optical Mouse: Configuring as mouse
+[    45.119] (II) evdev: PixArt Dell MS116 USB Optical Mouse: Adding scrollwheel support
+[    45.119] (**) evdev: PixArt Dell MS116 USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[    45.119] (**) evdev: PixArt Dell MS116 USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    45.119] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.3/1-4.3.2/1-4.3.2:1.0/0003:413C:301A.0003/input/input7/event7"
+[    45.119] (II) XINPUT: Adding extended input device "PixArt Dell MS116 USB Optical Mouse" (type: MOUSE, id 12)
+[    45.119] (II) evdev: PixArt Dell MS116 USB Optical Mouse: initialized for relative axes.
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: (accel) keeping acceleration scheme 1
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: (accel) acceleration profile 0
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: (accel) acceleration factor: 2.000
+[    45.119] (**) PixArt Dell MS116 USB Optical Mouse: (accel) acceleration threshold: 4
+[    45.120] (II) config/udev: Adding input device PixArt Dell MS116 USB Optical Mouse (/dev/input/mouse0)
+[    45.120] (II) No input driver specified, ignoring this device.
+[    45.120] (II) This device may have been added with another device file.
+[    45.120] (II) config/udev: Adding input device DELL0831:00 044E:1220 Mouse (/dev/input/event9)
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: Applying InputClass "evdev pointer catchall"
+[    45.120] (II) Using input driver 'evdev' for 'DELL0831:00 044E:1220 Mouse'
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: always reports core events
+[    45.120] (**) evdev: DELL0831:00 044E:1220 Mouse: Device: "/dev/input/event9"
+[    45.120] (--) evdev: DELL0831:00 044E:1220 Mouse: Vendor 0x44e Product 0x1220
+[    45.120] (--) evdev: DELL0831:00 044E:1220 Mouse: Found 3 mouse buttons
+[    45.120] (--) evdev: DELL0831:00 044E:1220 Mouse: Found scroll wheel(s)
+[    45.120] (--) evdev: DELL0831:00 044E:1220 Mouse: Found relative axes
+[    45.120] (--) evdev: DELL0831:00 044E:1220 Mouse: Found x and y relative axes
+[    45.120] (II) evdev: DELL0831:00 044E:1220 Mouse: Configuring as mouse
+[    45.120] (II) evdev: DELL0831:00 044E:1220 Mouse: Adding scrollwheel support
+[    45.120] (**) evdev: DELL0831:00 044E:1220 Mouse: YAxisMapping: buttons 4 and 5
+[    45.120] (**) evdev: DELL0831:00 044E:1220 Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    45.120] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-9/i2c-DELL0831:00/0018:044E:1220.0005/input/input12/event9"
+[    45.120] (II) XINPUT: Adding extended input device "DELL0831:00 044E:1220 Mouse" (type: MOUSE, id 13)
+[    45.120] (II) evdev: DELL0831:00 044E:1220 Mouse: initialized for relative axes.
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: (accel) keeping acceleration scheme 1
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: (accel) acceleration profile 0
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: (accel) acceleration factor: 2.000
+[    45.120] (**) DELL0831:00 044E:1220 Mouse: (accel) acceleration threshold: 4
+[    45.121] (II) config/udev: Adding input device DELL0831:00 044E:1220 Mouse (/dev/input/mouse1)
+[    45.121] (II) No input driver specified, ignoring this device.
+[    45.121] (II) This device may have been added with another device file.
+[    45.121] (II) config/udev: Adding input device DELL0831:00 044E:1220 Touchpad (/dev/input/event12)
+[    45.121] (**) DELL0831:00 044E:1220 Touchpad: Applying InputClass "evdev touchpad catchall"
+[    45.121] (**) DELL0831:00 044E:1220 Touchpad: Applying InputClass "evdev touchscreen catchall"
+[    45.121] (**) DELL0831:00 044E:1220 Touchpad: Applying InputClass "touchpad catchall"
+[    45.121] (**) DELL0831:00 044E:1220 Touchpad: Applying InputClass "Default clickpad buttons"
+[    45.121] (II) LoadModule: "synaptics"
+[    45.121] (II) Loading /usr/lib/xorg/modules/input/synaptics_drv.so
+[    45.121] (II) Module synaptics: vendor="X.Org Foundation"
+[    45.121] 	compiled for 1.18.1, module version = 1.8.2
+[    45.121] 	Module class: X.Org XInput Driver
+[    45.121] 	ABI class: X.Org XInput driver, version 22.1
+[    45.121] (II) Using input driver 'synaptics' for 'DELL0831:00 044E:1220 Touchpad'
+[    45.121] (**) DELL0831:00 044E:1220 Touchpad: always reports core events
+[    45.121] (**) Option "Device" "/dev/input/event12"
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: x-axis range 0 - 1199 (res 12)
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: y-axis range 0 - 635 (res 12)
+[    45.188] (II) synaptics: DELL0831:00 044E:1220 Touchpad: device does not report pressure, will use touch data.
+[    45.188] (II) synaptics: DELL0831:00 044E:1220 Touchpad: device does not report finger width.
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: buttons: left right double triple
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: Vendor 0x44e Product 0x1220
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: invalid pressure range.  defaulting to 0 - 255
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: invalid finger width range.  defaulting to 0 - 15
+[    45.188] (--) synaptics: DELL0831:00 044E:1220 Touchpad: touchpad found
+[    45.188] (**) DELL0831:00 044E:1220 Touchpad: always reports core events
+[    45.220] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-9/i2c-DELL0831:00/0018:044E:1220.0005/input/input13/event12"
+[    45.220] (II) XINPUT: Adding extended input device "DELL0831:00 044E:1220 Touchpad" (type: TOUCHPAD, id 14)
+[    45.220] (**) synaptics: DELL0831:00 044E:1220 Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[    45.220] (**) synaptics: DELL0831:00 044E:1220 Touchpad: (accel) MaxSpeed is now 1.75
+[    45.220] (**) synaptics: DELL0831:00 044E:1220 Touchpad: (accel) AccelFactor is now 0.147
+[    45.220] (**) DELL0831:00 044E:1220 Touchpad: (accel) keeping acceleration scheme 1
+[    45.220] (**) DELL0831:00 044E:1220 Touchpad: (accel) acceleration profile 1
+[    45.220] (**) DELL0831:00 044E:1220 Touchpad: (accel) acceleration factor: 2.000
+[    45.220] (**) DELL0831:00 044E:1220 Touchpad: (accel) acceleration threshold: 4
+[    45.220] (--) synaptics: DELL0831:00 044E:1220 Touchpad: touchpad found
+[    45.220] (II) config/udev: Adding input device DELL0831:00 044E:1220 Touchpad (/dev/input/mouse2)
+[    45.220] (**) DELL0831:00 044E:1220 Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[    45.221] (II) config/udev: Adding input device DELL0831:00 044E:1220 UNKNOWN (/dev/input/event13)
+[    45.221] (**) DELL0831:00 044E:1220 UNKNOWN: Applying InputClass "evdev keyboard catchall"
+[    45.221] (II) Using input driver 'evdev' for 'DELL0831:00 044E:1220 UNKNOWN'
+[    45.221] (**) DELL0831:00 044E:1220 UNKNOWN: always reports core events
+[    45.221] (**) evdev: DELL0831:00 044E:1220 UNKNOWN: Device: "/dev/input/event13"
+[    45.221] (--) evdev: DELL0831:00 044E:1220 UNKNOWN: Vendor 0x44e Product 0x1220
+[    45.221] (--) evdev: DELL0831:00 044E:1220 UNKNOWN: Found keys
+[    45.221] (II) evdev: DELL0831:00 044E:1220 UNKNOWN: Configuring as keyboard
+[    45.221] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-9/i2c-DELL0831:00/0018:044E:1220.0005/input/input14/event13"
+[    45.221] (II) XINPUT: Adding extended input device "DELL0831:00 044E:1220 UNKNOWN" (type: KEYBOARD, id 15)
+[    45.221] (**) Option "xkb_rules" "evdev"
+[    45.221] (**) Option "xkb_model" "pc105"
+[    45.221] (**) Option "xkb_layout" "us"
+[    45.221] (II) config/udev: Adding input device DELL0831:00 044E:1220 UNKNOWN (/dev/input/event14)
+[    45.221] (II) No input driver specified, ignoring this device.
+[    45.221] (II) This device may have been added with another device file.
+[    45.221] (II) config/udev: Adding input device DELL0831:00 044E:1220 UNKNOWN (/dev/input/event15)
+[    45.221] (**) DELL0831:00 044E:1220 UNKNOWN: Applying InputClass "evdev keyboard catchall"
+[    45.221] (II) Using input driver 'evdev' for 'DELL0831:00 044E:1220 UNKNOWN'
+[    45.221] (**) DELL0831:00 044E:1220 UNKNOWN: always reports core events
+[    45.221] (**) evdev: DELL0831:00 044E:1220 UNKNOWN: Device: "/dev/input/event15"
+[    45.221] (--) evdev: DELL0831:00 044E:1220 UNKNOWN: Vendor 0x44e Product 0x1220
+[    45.221] (--) evdev: DELL0831:00 044E:1220 UNKNOWN: Found keys
+[    45.221] (II) evdev: DELL0831:00 044E:1220 UNKNOWN: Configuring as keyboard
+[    45.221] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:15.1/i2c_designware.1/i2c-9/i2c-DELL0831:00/0018:044E:1220.0005/input/input16/event15"
+[    45.221] (II) XINPUT: Adding extended input device "DELL0831:00 044E:1220 UNKNOWN" (type: KEYBOARD, id 16)
+[    45.221] (**) Option "xkb_rules" "evdev"
+[    45.221] (**) Option "xkb_model" "pc105"
+[    45.221] (**) Option "xkb_layout" "us"
+[    45.222] (II) config/udev: Adding input device HDA Intel PCH Headphone Mic (/dev/input/event20)
+[    45.222] (II) No input driver specified, ignoring this device.
+[    45.222] (II) This device may have been added with another device file.
+[    45.222] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event21)
+[    45.222] (II) No input driver specified, ignoring this device.
+[    45.222] (II) This device may have been added with another device file.
+[    45.222] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event22)
+[    45.222] (II) No input driver specified, ignoring this device.
+[    45.222] (II) This device may have been added with another device file.
+[    45.222] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event23)
+[    45.222] (II) No input driver specified, ignoring this device.
+[    45.222] (II) This device may have been added with another device file.
+[    45.222] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event24)
+[    45.222] (II) No input driver specified, ignoring this device.
+[    45.222] (II) This device may have been added with another device file.
+[    45.223] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event25)
+[    45.223] (II) No input driver specified, ignoring this device.
+[    45.223] (II) This device may have been added with another device file.
+[    45.223] (II) config/udev: Adding input device Intel HID events (/dev/input/event8)
+[    45.223] (**) Intel HID events: Applying InputClass "evdev keyboard catchall"
+[    45.223] (II) Using input driver 'evdev' for 'Intel HID events'
+[    45.223] (**) Intel HID events: always reports core events
+[    45.223] (**) evdev: Intel HID events: Device: "/dev/input/event8"
+[    45.223] (--) evdev: Intel HID events: Vendor 0 Product 0
+[    45.223] (--) evdev: Intel HID events: Found keys
+[    45.223] (II) evdev: Intel HID events: Configuring as keyboard
+[    45.223] (**) Option "config_info" "udev:/sys/devices/platform/INT33D5:00/input/input8/event8"
+[    45.223] (II) XINPUT: Adding extended input device "Intel HID events" (type: KEYBOARD, id 17)
+[    45.223] (**) Option "xkb_rules" "evdev"
+[    45.223] (**) Option "xkb_model" "pc105"
+[    45.223] (**) Option "xkb_layout" "us"
+[    45.223] (II) config/udev: Adding input device Dell WMI hotkeys (/dev/input/event11)
+[    45.223] (**) Dell WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[    45.223] (II) Using input driver 'evdev' for 'Dell WMI hotkeys'
+[    45.223] (**) Dell WMI hotkeys: always reports core events
+[    45.223] (**) evdev: Dell WMI hotkeys: Device: "/dev/input/event11"
+[    45.223] (--) evdev: Dell WMI hotkeys: Vendor 0 Product 0
+[    45.223] (--) evdev: Dell WMI hotkeys: Found keys
+[    45.223] (II) evdev: Dell WMI hotkeys: Configuring as keyboard
+[    45.223] (**) Option "config_info" "udev:/sys/devices/platform/PNP0C14:05/wmi_bus/wmi_bus-PNP0C14:05/9DBB5994-A997-11DA-B012-B622A1EF5492/input/input11/event11"
+[    45.223] (II) XINPUT: Adding extended input device "Dell WMI hotkeys" (type: KEYBOARD, id 18)
+[    45.223] (**) Option "xkb_rules" "evdev"
+[    45.223] (**) Option "xkb_model" "pc105"
+[    45.223] (**) Option "xkb_layout" "us"
+[    45.224] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[    45.224] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[    45.224] (II) Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[    45.224] (**) AT Translated Set 2 keyboard: always reports core events
+[    45.224] (**) evdev: AT Translated Set 2 keyboard: Device: "/dev/input/event4"
+[    45.224] (--) evdev: AT Translated Set 2 keyboard: Vendor 0x1 Product 0x1
+[    45.224] (--) evdev: AT Translated Set 2 keyboard: Found keys
+[    45.224] (II) evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[    45.224] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[    45.224] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 19)
+[    45.224] (**) Option "xkb_rules" "evdev"
+[    45.224] (**) Option "xkb_model" "pc105"
+[    45.224] (**) Option "xkb_layout" "us"
+[    45.257] (II) intel(0): EDID vendor "SHP", prod id 5168
+[    45.257] (II) intel(0): DDCModeFromDetailedTiming: 3840x2160 Warning: We only handle separate sync.
+[    45.257] (II) intel(0): Printing DDC gathered Modelines:
+[    45.257] (II) intel(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2222 -hsync -vsync (133.3 kHz eP)
+[    45.257] (II) intel(0): Modeline "3840x2160"x0.0  533.25  3840 3888 3920 4000  2160 2163 2168 2776 -hsync -vsync (133.3 kHz e)
+[    45.817] (II) intel(0): resizing framebuffer to 8x8
+[    45.819] (II) intel(0): resizing framebuffer to 864x486
+[    45.820] (II) intel(0): switch to mode 864x486@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    47.927] (EE) 
+[    47.927] (EE) Backtrace:
+[    47.927] (EE) 0: /usr/lib/xorg/Xorg (xorg_backtrace+0x4e) [0x5577d9a8e6ce]
+[    47.927] (EE) 1: /usr/lib/xorg/Xorg (0x5577d98dc000+0x1b6a69) [0x5577d9a92a69]
+[    47.927] (EE) 2: /lib/x86_64-linux-gnu/libc.so.6 (0x7f35c95c8000+0x354c0) [0x7f35c95fd4c0]
+[    47.927] (EE) 3: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x75dad) [0x7f35c6cc3dad]
+[    47.927] (EE) 4: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x40d4c) [0x7f35c6c8ed4c]
+[    47.927] (EE) 5: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x42cc1) [0x7f35c6c90cc1]
+[    47.927] (EE) 6: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x46179) [0x7f35c6c94179]
+[    47.927] (EE) 7: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x4968e) [0x7f35c6c9768e]
+[    47.927] (EE) 8: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x3a13f) [0x7f35c6c8813f]
+[    47.927] (EE) 9: /usr/lib/xorg/modules/drivers/intel_drv.so (0x7f35c6c4e000+0x3a342) [0x7f35c6c88342]
+[    47.927] (EE) 10: /usr/lib/xorg/Xorg (0x5577d98dc000+0x13d341) [0x5577d9a19341]
+[    47.927] (EE) 11: /usr/lib/xorg/Xorg (0x5577d98dc000+0x4fd47) [0x5577d992bd47]
+[    47.927] (EE) 12: /usr/lib/xorg/Xorg (0x5577d98dc000+0x53d9f) [0x5577d992fd9f]
+[    47.927] (EE) 13: /usr/lib/xorg/Xorg (0x5577d98dc000+0x57e13) [0x5577d9933e13]
+[    47.927] (EE) 14: /lib/x86_64-linux-gnu/libc.so.6 (__libc_start_main+0xf0) [0x7f35c95e8840]
+[    47.927] (EE) 15: /usr/lib/xorg/Xorg (_start+0x29) [0x5577d991e069]
+[    47.927] (EE) 
+[    47.927] (EE) Segmentation fault at address 0x7c
+[    47.927] (EE) 
+Fatal server error:
+[    47.927] (EE) Caught signal 11 (Segmentation fault). Server aborting
+[    47.927] (EE) 
+[    47.927] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[    47.927] (EE) Please also check the log file at "/var/log/Xorg.0.log" for additional information.
+[    47.927] (EE) 
+[    49.496] (EE) Server terminated with error (1). Closing log file.

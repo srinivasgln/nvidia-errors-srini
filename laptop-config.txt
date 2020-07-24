@@ -1,0 +1,39 @@
+Script started on Fri 24 Jul 2020 07:38:13 PM
+root@srini-Precision-7530:/home/srini# hostnamectl
+   Static hostname: srini-Precision-7530
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: 264c84e454f54401b6581e9d158f237a
+           Boot ID: 8c93907d9b3d442a9488e61247f5c010
+  Operating System: Ubuntu 16.04.6 LTS
+            Kernel: Linux 4.15.0-112-generic
+      Architecture: x86-64
+root@srini-Precision-7530:/home/srini# lshw -c display
+DMI   SMP   PA-RISC       device-tree           SPD   memory      /proc/cpuinfo             CPUID     PCI (sysfs)           ISA PnP       PCMCIA      PCMCIA      kernel device tree (sysfs)                          USB   IDE   SCSI    Network interfaces                  Framebuffer devices                   Display       CPUFreq       ABI     *-display
+       description: VGA compatible controller
+       product: GP104GLM [Quadro P3200 Mobile]
+       vendor: NVIDIA Corporation
+       physical id: 0
+       bus info: pci@0000:01:00.0
+       version: a1
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+       configuration: driver=nvidia latency=0
+       resources: irq:16 memory:b4000000-b4ffffff memory:70000000-7fffffff memory:80000000-81ffffff ioport:3000(size=128) memory:b5000000-b507ffff
+  *-display UNCLAIMED
+       description: VGA compatible controller
+       product: Intel Corporation
+       vendor: Intel Corporation
+       physical id: 2
+       bus info: pci@0000:00:02.0
+       version: 00
+       width: 64 bits
+       clock: 33MHz
+       capabilities: pciexpress msi pm vga_controller bus_master cap_list
+       configuration: latency=0
+       resources: memory:b3000000-b3ffffff memory:60000000-6fffffff ioport:4000(size=64) memory:c0000-dffff
+root@srini-Precision-7530:/home/srini# exit
+exit
+
+Script done on Fri 24 Jul 2020 07:38:53 PM

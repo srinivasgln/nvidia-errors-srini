@@ -1,0 +1,398 @@
+nvidia-installer log file '/var/log/nvidia-installer.log'
+creation time: Fri Jul 24 16:30:30 2020
+installer version: 418.56
+
+PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+
+nvidia-installer command line:
+    ./nvidia-installer
+    --dkms
+    --no-opengl-files
+
+Unable to load: nvidia-installer ncurses v6 user interface
+
+Using: nvidia-installer ncurses user interface
+-> Detected 12 CPUs online; setting concurrency level to 12.
+-> Installing NVIDIA driver version 418.56.
+-> There appears to already be a driver installed on your system (version: 440.33.01).  As part of installing this driver (version: 418.56), the existing driver will be uninstalled.  Are you sure you want to continue? (Answer: Continue installation)
+-> Would you like to register the kernel module sources with DKMS? This will allow DKMS to automatically build a new module, if you install a different kernel later. (Answer: No)
+-> Performing CC sanity check with CC="/usr/bin/cc".
+-> Kernel source path: '/lib/modules/4.15.0-112-generic/build'
+-> Kernel output path: '/lib/modules/4.15.0-112-generic/build'
+-> The CC version check failed:
+
+The kernel was built with gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12), but the current compiler version is cc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010.
+
+This may lead to subtle problems; if you are not certain whether the mismatched compiler will be compatible with your kernel, you may wish to abort installation, set the CC environment variable to the name of the compiler used to compile your kernel, and restart installation. (Answer: Ignore CC version check)
+WARNING: Ignoring CC version mismatch:
+
+The kernel was built with gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.12), but the current compiler version is cc (Ubuntu 5.5.0-12ubuntu1~16.04) 5.5.0 20171010.
+-> Performing Compiler check.
+-> Performing Dom0 check.
+-> Performing Xen check.
+-> Performing PREEMPT_RT check.
+-> Performing vgpu_kvm check.
+-> Cleaning kernel module build directory.
+   executing: 'cd ./kernel; /usr/bin/make -k -j12 clean NV_EXCLUDE_KERNEL_MODULES="" SYSSRC="/lib/modules/4.15.0-112-generic/build" SYSOUT="/lib/modules/4.15.0-112-generic/build"'...
+   rm -f -r conftest
+   make[1]: Entering directory '/usr/src/linux-headers-4.15.0-112-generic'
+   make[1]: Leaving directory '/usr/src/linux-headers-4.15.0-112-generic'
+-> Building kernel modules
+   executing: 'cd ./kernel; /usr/bin/make -k -j12  NV_EXCLUDE_KERNEL_MODULES="" SYSSRC="/lib/modules/4.15.0-112-generic/build" SYSOUT="/lib/modules/4.15.0-112-generic/build"'...
+   make[1]: Entering directory '/usr/src/linux-headers-4.15.0-112-generic'
+     SYMLINK /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-kernel.o
+     SYMLINK /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset/nv-modeset-kernel.o
+    CONFTEST: remap_pfn_range
+    CONFTEST: hash__remap_4k_pfn
+    CONFTEST: follow_pfn
+    CONFTEST: vmap
+    CONFTEST: set_pages_uc
+    CONFTEST: list_is_first
+    CONFTEST: INIT_WORK
+    CONFTEST: set_memory_uc
+    CONFTEST: set_memory_array_uc
+    CONFTEST: change_page_attr
+    CONFTEST: pci_get_class
+    CONFTEST: pci_choose_state
+    CONFTEST: vm_insert_page
+    CONFTEST: acpi_device_id
+    CONFTEST: acquire_console_sem
+    CONFTEST: console_lock
+    CONFTEST: on_each_cpu
+    CONFTEST: kmem_cache_create
+    CONFTEST: smp_call_function
+    CONFTEST: acpi_evaluate_integer
+    CONFTEST: ioremap_cache
+    CONFTEST: ioremap_wc
+    CONFTEST: acpi_walk_namespace
+    CONFTEST: pci_domain_nr
+    CONFTEST: pci_dma_mapping_error
+    CONFTEST: sg_alloc_table
+    CONFTEST: pci_get_domain_bus_and_slot
+    CONFTEST: sg_init_table
+    CONFTEST: get_num_physpages
+    CONFTEST: efi_enabled
+    CONFTEST: proc_create_data
+    CONFTEST: proc_remove
+    CONFTEST: pde_data
+    CONFTEST: pm_vt_switch_required
+    CONFTEST: xen_ioemu_inject_msi
+    CONFTEST: phys_to_dma
+    CONFTEST: get_dma_ops
+    CONFTEST: write_cr4
+    CONFTEST: of_get_property
+    CONFTEST: of_find_node_by_phandle
+    CONFTEST: of_node_to_nid
+    CONFTEST: pnv_pci_get_npu_dev
+    CONFTEST: of_get_ibm_chip_id
+    CONFTEST: for_each_online_node
+    CONFTEST: node_end_pfn
+    CONFTEST: pci_bus_address
+    CONFTEST: pci_stop_and_remove_bus_device
+    CONFTEST: pci_remove_bus_device
+    CONFTEST: request_threaded_irq
+    CONFTEST: register_cpu_notifier
+    CONFTEST: cpuhp_setup_state
+    CONFTEST: dma_map_resource
+    CONFTEST: backlight_device_register
+    CONFTEST: register_acpi_notifier
+    CONFTEST: timer_setup
+    CONFTEST: pci_enable_msix_range
+    CONFTEST: compound_order
+    CONFTEST: do_gettimeofday
+    CONFTEST: remap_page_range
+    CONFTEST: address_space_init_once
+    CONFTEST: kbasename
+    CONFTEST: fatal_signal_pending
+    CONFTEST: list_cut_position
+    CONFTEST: vzalloc
+    CONFTEST: wait_on_bit_lock_argument_count
+    CONFTEST: bitmap_clear
+    CONFTEST: usleep_range
+    CONFTEST: radix_tree_empty
+    CONFTEST: radix_tree_replace_slot
+    CONFTEST: pnv_npu2_init_context
+    CONFTEST: drm_dev_unref
+    CONFTEST: drm_reinit_primary_mode_group
+    CONFTEST: get_user_pages_remote
+    CONFTEST: get_user_pages
+    CONFTEST: drm_gem_object_lookup
+    CONFTEST: drm_atomic_state_ref_counting
+    CONFTEST: drm_driver_has_gem_prime_res_obj
+    CONFTEST: drm_atomic_helper_connector_dpms
+    CONFTEST: vmf_insert_pfn
+    CONFTEST: drm_connector_funcs_have_mode_in_name
+    CONFTEST: drm_framebuffer_get
+    CONFTEST: drm_gem_object_get
+    CONFTEST: drm_dev_put
+    CONFTEST: is_export_symbol_gpl_of_node_to_nid
+    CONFTEST: is_export_symbol_present_swiotlb_map_sg_attrs
+    CONFTEST: is_export_symbol_present_swiotlb_dma_ops
+    CONFTEST: i2c_adapter
+    CONFTEST: irq_handler_t
+    CONFTEST: pm_message_t
+    CONFTEST: acpi_device_ops
+    CONFTEST: acpi_op_remove
+    CONFTEST: outer_flush_all
+    CONFTEST: proc_dir_entry
+    CONFTEST: scatterlist
+    CONFTEST: sg_table
+    CONFTEST: file_operations
+    CONFTEST: vm_operations_struct
+    CONFTEST: atomic_long_type
+    CONFTEST: pci_save_state
+    CONFTEST: file_inode
+    CONFTEST: task_struct
+    CONFTEST: kuid_t
+    CONFTEST: dma_ops
+    CONFTEST: swiotlb_dma_ops
+    CONFTEST: dma_map_ops
+    CONFTEST: noncoherent_swiotlb_dma_ops
+    CONFTEST: vm_fault_present
+    CONFTEST: vm_fault_has_address
+    CONFTEST: backlight_properties_type
+    CONFTEST: vmbus_channel_has_ringbuffer_page
+    CONFTEST: fault_flags
+    CONFTEST: atomic64_type
+    CONFTEST: address_space
+    CONFTEST: backing_dev_info
+    CONFTEST: mm_context_t
+    CONFTEST: vm_ops_fault_removed_vma_arg
+    CONFTEST: node_states_n_memory
+    CONFTEST: drm_bus_present
+    CONFTEST: drm_bus_has_bus_type
+    CONFTEST: drm_bus_has_get_irq
+    CONFTEST: drm_bus_has_get_name
+    CONFTEST: drm_driver_has_legacy_dev_list
+    CONFTEST: drm_driver_has_set_busid
+    CONFTEST: drm_crtc_state_has_connectors_changed
+    CONFTEST: drm_mode_connector_list_update_has_merge_type_bits_arg
+    CONFTEST: drm_init_function_args
+    CONFTEST: drm_helper_mode_fill_fb_struct
+    CONFTEST: drm_master_drop_has_from_release_arg
+    CONFTEST: drm_driver_unload_has_int_return_type
+    CONFTEST: kref_has_refcount_of_type_refcount_t
+    CONFTEST: drm_atomic_helper_crtc_destroy_state_has_crtc_arg
+    CONFTEST: drm_crtc_helper_funcs_has_atomic_enable
+    CONFTEST: drm_mode_object_find_has_file_priv_arg
+    CONFTEST: dma_buf_owner
+    CONFTEST: drm_connector_list_iter
+    CONFTEST: drm_atomic_helper_swap_state_has_stall_arg
+    CONFTEST: dom0_kernel_present
+    CONFTEST: nvidia_vgpu_hyperv_available
+    CONFTEST: nvidia_vgpu_kvm_build
+    CONFTEST: nvidia_grid_build
+    CONFTEST: drm_available
+    CONFTEST: drm_atomic_available
+    CONFTEST: is_export_symbol_gpl_refcount_inc
+    CONFTEST: is_export_symbol_gpl_refcount_dec_and_test
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-frontend.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-instance.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-acpi.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-chrdev.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-cray.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-dma.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-i2c.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-gvi.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-mempool.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-mmap.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-p2p.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-pat.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-procfs.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-usermap.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-vm.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-vtophys.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-interface.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-mlock.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-pci.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-registry.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-usermap.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-modeset-interface.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-pci-table.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-kthread-q.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-kthread-q-selftest.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-memdbg.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-ibmnpu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-report-err.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-msi.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-rsync.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv_uvm_interface.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nvlink_linux.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/linux_nvswitch.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm_utils.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm_common.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm_linux.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/nvstatus.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/nvCpuUuid.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_tools.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_global.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_isr.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_procfs.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_va_space.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_va_space_mm.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_semaphore.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_mem.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_rm_mem.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_channel.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_lock.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_hal.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_tree.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_allocator.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_va_range.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_va_block.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_group.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_replayable_faults.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_non_replayable_faults.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_access_counters.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_events.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_module.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_mmu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pte_batch.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_tlb_batch.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_push.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pushbuffer.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_thread_context.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_tracker.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kepler.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kepler_ce.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kepler_host.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kepler_mmu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_maxwell.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_maxwell_host.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pascal.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pascal_ce.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pascal_host.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pascal_mmu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pascal_fault_buffer.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_volta_host.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_volta_mmu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_volta.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_volta_fault_buffer.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_volta_access_counter_buffer.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_turing.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_turing_mmu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_turing_host.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_policy.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_utils.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kvmalloc.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pmm_sysmem.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pmm_gpu.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_migrate.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_populate_pageable.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_migrate_pageable.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_map_external.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_user_channel.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_hmm.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_heuristics.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_thrashing.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_prefetch.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_ats_ibm.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_ats_faults.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_test_rng.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_tree_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_allocator_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_gpu_semaphore_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_mem_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_rm_mem_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_page_tree_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_tracker_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_push_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_channel_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_ce_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_utils_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_lock_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_kvmalloc_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pmm_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_pmm_sysmem_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_events_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_perf_module_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_get_rm_ptes_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_fault_buffer_flush_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_mmu_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_peer_identity_mappings_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_va_block_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm/uvm8_range_group_tree_test.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset/nvidia-modeset-linux.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-drv.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-utils.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-crtc.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-encoder.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-connector.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-gem.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-fb.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-modeset.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-prime-fence.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-linux.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-helper.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nv-pci-table.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-gem-nvkms-memory.o
+     CC [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm/nvidia-drm-gem-user-memory.o
+   ld -r -o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-interface.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-frontend.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-instance.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-acpi.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-chrdev.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-cray.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-dma.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-gvi.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-i2c.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-mempo
+   ol.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-mmap.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-p2p.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-pat.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-procfs.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-usermap.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-vm.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-vtophys.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-interface.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-mlock.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-pci.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-registry.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/os-usermap.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-modeset-interface.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-pci-table.o /tmp/selfgz18155/NVIDIA-Linux-x86
+   _64-418.56/kernel/nvidia/nv-kthread-q.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-kthread-q-selftest.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-memdbg.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-ibmnpu.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-report-err.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-rsync.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv-msi.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nv_uvm_interface.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/nvlink_linux.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia/linux_nvswitch.o
+   ld -r -o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset/nv-modeset-interface.o /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset/nvidia-modeset-linux.o
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia.o
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm.o
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset.o
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm.o
+     Building modules, stage 2.
+     MODPOST 4 modules
+     CC      /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm.mod.o
+     CC      /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset.mod.o
+     CC      /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm.mod.o
+     CC      /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia.mod.o
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-modeset.ko
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-drm.ko
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia.ko
+     LD [M]  /tmp/selfgz18155/NVIDIA-Linux-x86_64-418.56/kernel/nvidia-uvm.ko
+   make[1]: Leaving directory '/usr/src/linux-headers-4.15.0-112-generic'
+-> done.
+-> Kernel module compilation complete.
+-> Kernel messages:
+[ 2331.979926] wlp111s0: authenticated
+[ 2331.981401] wlp111s0: associate with 70:79:b3:8f:f7:3f (try 1/3)
+[ 2331.984518] wlp111s0: RX ReassocResp from 70:79:b3:8f:f7:3f (capab=0x111 status=0 aid=1)
+[ 2331.987471] wlp111s0: associated
+[ 2332.061397] wlp111s0: Limiting TX power to 7 dBm as advertised by 70:79:b3:8f:f7:3f
+[ 2416.300921] wlp111s0: disconnect from AP 70:79:b3:8f:f7:3f for new auth to 00:d7:8f:d4:03:8f
+[ 2416.317880] wlp111s0: authenticate with 00:d7:8f:d4:03:8f
+[ 2416.327940] wlp111s0: send auth to 00:d7:8f:d4:03:8f (try 1/3)
+[ 2416.366630] wlp111s0: authenticated
+[ 2416.369501] wlp111s0: associate with 00:d7:8f:d4:03:8f (try 1/3)
+[ 2416.372543] wlp111s0: RX ReassocResp from 00:d7:8f:d4:03:8f (capab=0x111 status=0 aid=3)
+[ 2416.376861] wlp111s0: associated
+[ 2416.561506] wlp111s0: Limiting TX power to 16 dBm as advertised by 00:d7:8f:d4:03:8f
+[ 2609.610221] VFIO - User Level meta-driver version: 0.3
+[ 2609.626050] nvidia-nvlink: Nvlink Core is being initialized, major device number 236
+[ 2609.626377] nvidia 0000:01:00.0: vgaarb: changed VGA decodes: olddecodes=none,decodes=none:owns=none
+[ 2609.726366] NVRM: loading NVIDIA UNIX x86_64 Kernel Module  418.56  Fri Mar 15 12:59:26 CDT 2019
+[ 2609.729464] nvidia-uvm: Loaded the UVM driver in 8 mode, major device number 509
+[ 2609.730401] nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  418.56  Fri Mar 15 12:32:40 CDT 2019
+[ 2609.732598] [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+[ 2609.732599] [drm] Initialized nvidia-drm 0.0.0 20160202 for 0000:01:00.0 on minor 1
+[ 2609.733676] [drm] [nvidia-drm] [GPU ID 0x00000100] Unloading driver
+[ 2609.763462] nvidia-modeset: Unloading
+[ 2609.797424] nvidia-uvm: Unloaded the UVM driver in 8 mode
+[ 2609.857251] nvidia-nvlink: Unregistered the Nvlink Core, major device number 236
+-> Install NVIDIA's 32-bit compatibility libraries? (Answer: Yes)
+-> Uninstalling the previous installation with /usr/bin/nvidia-uninstall.
+-> Searching for conflicting files:
+-> done.
+-> Installing 'NVIDIA Accelerated Graphics Driver for Linux-x86_64' (418.56):
+   executing: '/sbin/ldconfig'...
+   executing: '/sbin/depmod -a '...
+-> done.
+-> Driver file installation is complete.
+-> Running post-install sanity check:
+-> done.
+-> Post-install sanity check passed.
+-> Running runtime sanity check:
+-> done.
+-> Runtime sanity check passed.
+-> Would you like to run the nvidia-xconfig utility to automatically update your X configuration file so that the NVIDIA X driver will be used when you restart X?  Any pre-existing X configuration file will be backed up. (Answer: Yes)
+-> Your X configuration file has been successfully updated.  Installation of the NVIDIA Accelerated Graphics Driver for Linux-x86_64 (version: 418.56) is now complete.
